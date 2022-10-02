@@ -10,7 +10,8 @@ def resolve_args():
     parser.add_argument(
         '--url', '-u',
         action='store',
-        dest='url'
+        dest='url',
+        required=True
     )
     return parser.parse_args()
 
